@@ -150,19 +150,10 @@
                     <p>Brownie de Chocolate</p>
                     <button class="btn-encomenda" type="button"><a href="">Fazer Encomenda</a></button>
                 </section>
-
-                
             </section>
         </section>
         <div class="banner-slider" aria-label="Banner principal">
             <div class="banner-slide active">
-                <img src="../Banners/Pizza de Marguerita banner1.jpg" alt="Pizza de Marguerita">
-                <div class="banner-content">
-                    <h2>Pizza de Marguerita</h2>
-                    <p>Recheadas por fora e irresistíveis por dentro.</p>
-                </div>
-            </div>
-            <div class="banner-slide">
                 <img src="../Banners/banner.jpg" alt="Churrasco">
                 <div class="banner-content">
                     <h2>Carne Bovina</h2>
@@ -196,22 +187,53 @@
                     <h2>Enroladinhos de Salsicha</h2>
                     <p>Perfeito para quem ama salgados.</p>
                 </div>
-            </div>
-
-            <button class="banner-btn prev" type="button" aria-label="Imagem anterior">&#10094;</button>
-            <button class="banner-btn next" type="button" aria-label="Próxima imagem">&#10095;</button>
-
+            </div>            
             <div class="banner-dots" aria-label="Seleção de imagens">
                 <button class="banner-dot active" type="button" aria-label="1"></button>
                 <button class="banner-dot" type="button" aria-label="2"></button>
                 <button class="banner-dot" type="button" aria-label="3"></button>
                 <button class="banner-dot" type="button" aria-label="4"></button>
                 <button class="banner-dot" type="button" aria-label="5"></button>
-                <button class="banner-dot" type="button" aria-label="6"></button>
             </div>
-            
         </div>
+        <section id="cardapio">
+            <section class="titulo">
+                <h1>Especiarías da casa</h1>
+            </section>
 
+            <section class="container">
+                <section class="item">
+                    <img src="../Produtos/Pasteis de Frango.jpg" alt="Pasteis De Frango">
+                    <p>Pasteis De Frango Recheado</p>
+                    <button class="btn-encomenda" type="button"><a href="">Fazer Encomenda</a></button>
+                </section>
+                <section class="item">
+                    <img src="../Produtos/coxinha de frango empanado.jpg" alt="Coxinhas de frango empanado">
+                    <p>Coxinhas De Frango Empanado</p>
+                    <button class="btn-encomenda" type="button"><a href="">Fazer Encomenda</a></button>
+                </section>
+                <section class="item">
+                    <img src="../Produtos/empanadas de carne bovina.jpg" alt="Empanadas De Carne Bovina">
+                    <p>Empanadas De Carne Bovina</p>
+                    <button class="btn-encomenda" type="button"><a href="">Fazer Encomenda</a></button>
+                </section>
+                <section class="item">
+                    <img src="../Produtos/Kachapuri georgiano Tradicional.jpg" alt="Kachapuri georgiano Tradicional">
+                    <p>Kachapuri Georgiano Tradicional</p>
+                    <button class="btn-encomenda" type="button"><a href="">Fazer Encomenda</a></button>
+                </section>
+                <section class="item">
+                    <img src="../Produtos/sushi.jpg" alt="Sushi Picante">
+                    <p>Sushi Com Molho Picante</p>
+                    <button class="btn-encomenda" type="button"><a href="">Fazer Encomenda</a></button>
+                </section>
+                <section class="item">
+                    <img src="../Produtos/palitos de mussarela.jpg" alt="Palitos de Mussarela">
+                    <p>Palitos De Queijo e Mussarela</p>
+                    <button class="btn-encomenda" type="button"><a href="">Fazer Encomenda</a></button>
+                </section>
+            </section>
+        </section>
         <script>
             const slides = document.querySelectorAll('.banner-slide');
             const dots = document.querySelectorAll('.banner-dot');
@@ -221,7 +243,8 @@
             const menu = document.querySelector('.menu');
             let indexAtual = 0;
             let intervalo;
-
+            let reiniciar;
+            
             function mostrarSlide(n) {
                 indexAtual = (n + slides.length) % slides.length;
 
